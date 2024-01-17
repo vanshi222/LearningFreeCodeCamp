@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        Thank you for taking the time to fill this form
+    </p>
+    <form id="survey-form">
+        <!-- name label -->
+        <label for="firstname"    id="name-label">Name 
+            <input type="text" id="name" name="firstname" placeholder=" enter your name" required> 
+        </label>
+        <!-- email label -->
+        <label for="email"  id="email-label">Email
+            <input type="email" id="email" name="email" placeholder=" enter your email" required>
+        </label>
+        <!-- number label -->
+        <label for="number" id="number-label">Age  
+            <input type="number" id="number" min="10" max="99" placeholder=" age">   
+        </label>
+        <!-- dropdown -->
+        <label for="dropdown">Which option best describes your current role? 
+            <select name="dropdown" id="dropdown">
+                <option value="student">student</option>
+                <option value="teacher">Teacher</option>
+                <option value="full time job">full time job</option>
+                <option value="prefer not to say">prefer not to say</option>
+                <option value="Other">other</option>
+            </select>
+        </label>
+        <!-- radio -->
+        <label for="">Did u find this course helpful?</label>
+        <label for="yes" class="set">
+            <input type="radio" id="yes" name="course" value="1" class="inline"> YES
+        </label>
+        <label for="no" class="set">
+            <input type="radio" id="no" name="course" value="2" class="inline"> NO
+        </label>
+        <!-- checkbox -->
+        <label for="interest">Interested Field? </label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="backend">Backend </label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="frontend">Frontend </label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="git">Git</label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="fullstack">Full Stack</label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="software">Software Developer</label>
+            <label class="set"><input type="checkbox" id="interest" class="inline" name="interest" value="datascience">Data Science</label>
+        </label>
+        <!-- textarea -->
+        <label for="comment">Any Comment & Suggestion?
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder=" enter your comment here"></textarea>
+        </label>
+        <!-- submit button -->
+        <button id="submit">Submit</button>
+    </form>   
+</body>
+</html>
