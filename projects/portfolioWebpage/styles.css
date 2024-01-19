@@ -1,0 +1,103 @@
+:root {
+    --border: 1px solid black;
+}
+
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%; 
+    background-image: url(https://img.freepik.com/premium-photo/blank-old-paper-textured-background_53876-153126.jpg?w=360);   
+    background-repeat: no-repeat;
+    background-size: calc(500vh);
+    line-height: 1.5; 
+}
+
+#header {
+    border: 2px solid transparent;
+    border-radius: 2px 2px 8px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.564);
+    /* width: calc(100vw - 1rem);   */
+    width: 100%; 
+    height: 4rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 10px;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(225, 184, 130, 0.841);
+    /* margin-top: -10px; */
+}
+
+.logo{
+    font-family: cursive;
+    font-size: 1.34rem; 
+    font-weight: bold; 
+}
+
+#navbar {
+    width: 35vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    font-family: cursive;
+    text-transform: capitalize; 
+    font-weight: 600; 
+    letter-spacing: 2px; 
+}
+ 
+ul {
+    list-style-type: none;
+    color: black; 
+}
+
+a {   
+    text-decoration: none;
+    color: black; 
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: #fff; 
+    border: transparent;
+    border-radius: 5px; 
+    padding: 3px; 
+    text-decoration: underline;
+}
+
+.container {
+    /* border: var(--border); */
+    position: absolute;
+    min-height: 100vh;
+    width: 100%; 
+}
+
+.section {
+    border: var(--border);
+    width: 100%;
+}
+
+.section1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.section2 {
+    min-height: 100vh;
+    margin-top: 30px;
+    background-color: rgba(225, 184, 130, 0.841);
+}
+
+.section2 > h2 {
+    padding-top: 10px;
+    text-align: center;
+}
